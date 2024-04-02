@@ -22,8 +22,10 @@ export default function TabPages(props) {
         intersectionObserver.observe(scrollRef.current);
 
         return () => {
-            intersectionObserver.unobserve(scrollRef.current);
-            intersectionObserver = void 0;
+            if (scrollRef.current && intersectionObserver) {
+                intersectionObserver.unobserve(scrollRef.current);
+                intersectionObserver = void 0;
+            }
         }
     }, []);
     return(
