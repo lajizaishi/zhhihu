@@ -80,7 +80,7 @@ export default function navigation(props) {
     return (
         <div className={` bg-white w-screen shadow-lg overflow-hidden ${props.className || ""}`}>
             <div className='mx-w-7xl mx-auto my-0 flex justify-center'>
-                <div className={`h-14 flex-col relative duration-300 transition translate-y-0 ${props.hide ? 'translate-y-0' : '-translate-y-14'}` }>
+                <div className={`h-14 flex-col relative duration-300 transition  ${ props.hide ? 'translate-y-0' : '-translate-y-14'}`}>
                     <div className=' h-14 flex justify-between items-center min-w-max'>
                         <div className='flex'>
                             <Logo/>

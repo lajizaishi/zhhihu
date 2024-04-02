@@ -13,7 +13,7 @@ module.exports = {
             colors: {
                 // white: '#fff',
                 // black: '#000',
-                white: 'luyi(cw)',
+                white: "luyi(cw)",
                 black: 'luyi(cb)',
                 gray: {
                     50: 'luyi(cg05)',

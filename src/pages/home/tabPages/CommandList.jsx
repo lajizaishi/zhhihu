@@ -94,7 +94,7 @@ export default function CommandList() {
     return (
         <div className='flex flex-col'>
             {
-                list.map(item=> <CommandData key={item.id} item={item}/> )
+                list.map((item,index)=> <CommandData key={`${item.id}-${index}`} item={item}/> )
             }
             <div ref={scrollRef}>loading</div>
         </div>
